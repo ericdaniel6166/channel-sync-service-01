@@ -29,6 +29,6 @@ class ChannelSyncControllerTest {
     void ping() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/ping"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.content().string("pong"));
+                .andExpect(MockMvcResultMatchers.content().string("pong channel-sync-service-01"));
     }
 }
